@@ -51,11 +51,82 @@
   color: white;
 }
 
+/* User Profile Section */
+#user-profile {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 1px;
+  border-color: #4CAF50;
+}
+
+#save-profile {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#save-profile:hover {
+  background-color: #45a049;
+}
+
+.profile-message {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.profile-message.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.profile-message.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
   }
   .card {
     margin: 10px 0;
+  }
+  #user-profile {
+    margin: 10px;
   }
 }
