@@ -1,1 +1,75 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>AI Fitness Coach</title>\n    <link rel="stylesheet" href="styles.css">\n</head>\n<body>\n    <header>\n        <h1>Welcome to Your AI Fitness Coach</h1>\n        <p>Your journey to fitness starts here!</p>\n    </header>\n    <main>\n        <section id="user-goals">\n            <h2>User Goals</h2>\n            <p>Define your fitness goals and track your progress.</p>\n        </section>\n        <section id="workout-plans">\n            <h2>Workout Plans</h2>\n            <p>Customized workout plans tailored to your needs.</p>\n        </section>\n        <section id="trainer-booking">\n            <h2>Trainer Booking</h2>\n            <p>Book one-on-one sessions with our expert trainers.</p>\n        </section>\n        <section id="progress-tracking">\n            <h2>Progress Tracking</h2>\n            <p>Monitor your progress with our tracking tools.</p>\n        </section>\n        <section id="subscription">\n            <h2>Subscription</h2>\n            <p>Join our community and access premium features!</p>\n        </section>\n    </main>\n    <footer>\n        <p>&copy; 2026 AI Fitness Coach</p>\n    </footer>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Coach</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your AI Fitness Coach</h1>
+        <p>Your journey to fitness starts here!</p>
+    </header>
+    <main>
+        <section id="user-profile">
+            <h2>Create Your Profile</h2>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="profile-name">Full Name</label>
+                    <input type="text" id="profile-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-age">Age</label>
+                    <input type="number" id="profile-age" min="1" max="120" placeholder="Enter your age" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-weight">Weight (kg)</label>
+                    <input type="number" id="profile-weight" min="1" placeholder="Enter your weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-height">Height (cm)</label>
+                    <input type="number" id="profile-height" min="1" placeholder="Enter your height" required>
+                </div>
+                <div class="form-group">
+                    <label for="profile-goal">Fitness Goal</label>
+                    <select id="profile-goal" required>
+                        <option value="">Select a goal</option>
+                        <option value="weight-loss">Weight Loss</option>
+                        <option value="muscle-gain">Muscle Gain</option>
+                        <option value="endurance">Endurance</option>
+                        <option value="flexibility">Flexibility</option>
+                        <option value="general-fitness">General Fitness</option>
+                    </select>
+                </div>
+                <button type="submit" id="save-profile">Save Profile</button>
+            </form>
+            <div id="profile-message" class="profile-message" aria-live="polite"></div>
+        </section>
+        <section id="user-goals">
+            <h2>User Goals</h2>
+            <p>Define your fitness goals and track your progress.</p>
+        </section>
+        <section id="workout-plans">
+            <h2>Workout Plans</h2>
+            <p>Customized workout plans tailored to your needs.</p>
+        </section>
+        <section id="trainer-booking">
+            <h2>Trainer Booking</h2>
+            <p>Book one-on-one sessions with our expert trainers.</p>
+        </section>
+        <section id="progress-tracking">
+            <h2>Progress Tracking</h2>
+            <p>Monitor your progress with our tracking tools.</p>
+        </section>
+        <section id="subscription">
+            <h2>Subscription</h2>
+            <p>Join our community and access premium features!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 AI Fitness Coach</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
